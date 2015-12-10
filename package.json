@@ -1,0 +1,34 @@
+{
+  "name": "warn-undefined",
+  "version": "0.0.1",
+  "description": "A simple wrapper around an object that will warn when you access keys that aren't defined (using the magic of ES6 Proxies)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benjie Gillam <code@benjiegillam.com>",
+  "license": "MIT",
+  "dependencies": {
+    "harmony-proxy": "^0.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timecounts/warn-undefined.git"
+  },
+  "keywords": [
+    "Proxy",
+    "undefined",
+    "non-existent",
+    "existence",
+    "key",
+    "object",
+    "throw",
+    "warn",
+    "error"
+  ],
+  "bugs": {
+    "url": "https://github.com/timecounts/warn-undefined/issues"
+  },
+  "homepage": "https://github.com/timecounts/warn-undefined#readme"
+}

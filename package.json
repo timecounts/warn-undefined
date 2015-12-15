@@ -4,14 +4,20 @@
   "description": "A simple wrapper around an object that will warn when you access keys that aren't defined (using the magic of ES6 Proxies)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --harmony-proxies"
   },
   "author": "Benjie Gillam <code@benjiegillam.com>",
   "license": "MIT",
   "dependencies": {
     "harmony-proxy": "^0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "3.4.1",
+    "mocha": "2.3.4",
+    "mocha-sinon": "1.1.4",
+    "proxyquire": "1.7.3",
+    "sinon": "1.17.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timecounts/warn-undefined.git"

@@ -1,6 +1,6 @@
 {
   "name": "warn-undefined",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A simple wrapper around an object that will warn when you access keys that aren't defined (using the magic of ES6 Proxies)",
   "main": "index.js",
   "scripts": {

@@ -86,6 +86,23 @@ describe('warn-undefined', function() {
 
     });
 
+    describe('disabled', function() {
+
+      function wrap(foo) {
+        var warnUndefined = proxyquire('../index', {'harmony-proxy': require('harmony-proxy')});
+        return warnUndefined(foo, {disabled: true});
+      }
+
+      it('behaves as if proxy is unsupported', function() {
+        var foo = {bar: 'baz', quux: 'fred'};
+        var warnFoo = wrap(foo);
+        expect(warnFoo).to.equal(foo);
+        expect(warnFoo.bar).to.equal('baz');
+        expect(warnFoo.nx).to.be.undefined;
+      });
+
+    });
+
   });
 
 });

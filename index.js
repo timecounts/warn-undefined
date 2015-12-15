@@ -37,7 +37,7 @@ function makeHandler(options) {
 
 module.exports = function warnUndefined(obj, options) {
   options = options || {};
-  if (!supportsProxies) {
+  if (!supportsProxies || options.disabled) {
     return obj;
   } else {
     return new Proxy(obj, makeHandler(options));
